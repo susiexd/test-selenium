@@ -47,16 +47,13 @@ public class TempBaidu {
         oGoogleSearchBtn.click();
 
         try {
-
             Thread.sleep(5000);
-
         }
-
         catch(InterruptedException ex) {
-
             System.out.println(ex.getMessage());
-
         }
+        oWebDriver.findElement(By.id("content_left")).findElement(By.id("1")).findElement(By.tagName("a")).click();
+
         System.out.print("" + oWebDriver.getPageSource());
         //oWebDriver.close();
 
